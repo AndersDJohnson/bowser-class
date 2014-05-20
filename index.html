@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>bowser-class</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  </head>
+  <body>
+
+    <h1>bowser-class</h1>
+
+    <div>
+      <div id="classes">
+        <h2>Example for IE 10</h2>
+        <code>...</code>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://rawgit.com/ded/bowser/master/src/bowser.js"></script>
+    <script src="bowser-class.js"></script>
+
+    <script>
+      var instance = BowerClass.init({
+        bowser: {
+          msie: true,
+          version: '10.2'
+        }
+      });
+      var classes = instance.getClasses();
+      $(function () {
+        $('#classes code').html(classes.join(' '));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "bowser-class",
+  "main": "bowser-class.js",
+  "version": "0.0.1",
+  "authors": [
+    "Anders D. Johnson"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1",
+    "bowser": "~0.7.1"
+  }
+}
